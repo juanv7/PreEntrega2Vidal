@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+ul li:hover {
+    /*-- Aplica un fondo al pasar el mouse sobre los li */
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-- Header --*/
+header {
+    height: 95px;
+    background-color: #fb812a;
+    color: black;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+header div img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*-- Altura del main --*/
+/*-- Resta la altura del vh menos las alturas del header y footer --*/
+main {
+    height: calc(100vh - 225px);
+}
+
+.main-index {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 40px;
+}
+
+/* Mismo tamaño para los 2 section*/
+.main-index section {
+    height: 650px;
+    width: 600px;
+}
+
+.main-index section img {
+    /* La imagen del section ocupa 100% de alto y ancho */
+    height: 100%;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-index section p {
+    padding-top: 22px;
+    color: white;
+    font-size: 22px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: #fb812a;
+}
+
+.div2-footer p {
+    font-size: 22px;
+    color: black;
+}
+
+.div3-footer img {
+    /* Tamaño iconos de redes sociales */
+    height: 35px;
+    width: 35px;
+}
+
+/* MAIN DE DISCOGRAFIA */
+.main-discografia {
+    background-color: black;
+    padding-top: 20px;
+}
+
+.main-discografia h2 {
+    padding-left: 25px;
+}
+
+.main-discografia p {
+    padding-top: 20px;
+    color: white;
+    font-size: 22px;
+    padding-left: 25px;
+}
+
+.section-discografia {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-discografia img {
+    /*Configura las imagenes de la seccion*/
+    padding-top: 16px;
+    height: 230px;
+    width: 230px;
+}
+
+/* TOUR */
+.tour-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.tour-imagen img {
+    height: 250px;
+    width: 700px;
+}
+
+.main-tour {
+    background-color: black;
+    padding-top: 20px;
+}
+
+.main-tour h2 {
+    padding-top: 16px;
+    padding-left: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white
+}
+
+.boton-tour {
+    background-color: #fb812a;
+    height: 45px;
+    width: 70px;
+    font-weight: bold;
+}
+
+.seccion2-tour {
+    padding-top: 22px;
+}
+
+.fechas-tour {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fechas-tour p {
+    color: white;
+    font-size: 22px;
+}
+
+/* GALERIA */
+.main-galeria {
+    background-color: black;
+}
+
+.main-galeria h2 {
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.section-galeria {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-galeria div img {
+    height: 250px;
+    width: 250px;
+}
+
+.section2-galeria {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* CONTACTO */
+.main-contacto {
+    background-color: black;
+
+}
+
+.h2-contacto {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.p-contacto {
+    font-size: 25px;
+    color: white;
+}
+
+.section-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.button-contacto {
+    list-style-type: none;
+}
+
+.footer-contacto {
+    position: absolute;
+    bottom: 0;
+}
+
+.form-color {
+    color: white;
+}
+
+@media (max-width:350px) {
+
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 160px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    header nav ul {
+
+        flex-direction: column;
+        font-size: 17px;
+        gap: 2px;
+        align-items: center;
+    }
+
+    header div img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+
+    .main-index {
+        width: 100%;
+        height: 700px;
+        background-color: black;
+        flex-direction: column;
+        padding-top: 5px;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    .main-index section {
+        height: 300px;
+        width: 300px;
+    }
+
+    .main-index section img {
+        height: 100%;
+        width: 100%;
+    }
+
+    main h2 {
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .main-index section p {
+        padding-top: 10px;
+        color: white;
+        font-size: 15px;
+    }   
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: 85px;
+        width: 100%;
+    }
+
+    .div2-footer p {
+        font-size: 15px;
+        color: black;
+    }
+
+    .div3-footer img {
+        /* Tamaño iconos de redes sociales */
+        height: 25px;
+        width: 25px;
+    }
+
+/* GALERIA */
+    .main-galeria {
+        background-color: black;
+        width: 100%;
+        height: 1700px;
+    }
+    
+    .main-galeria h2 {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .section-galeria {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+        /*justify-content: space-evenly;*/
+    }
+
+    .section-galeria div img {
+        height: 170px;
+        width: 220px;
+    }
+
+    .section2-galeria {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*justify-content: space-evenly;*/
+    }
+    .section2-galeria iframe {
+        height: 170px;
+        width: 220px;
+    }
+
+}
